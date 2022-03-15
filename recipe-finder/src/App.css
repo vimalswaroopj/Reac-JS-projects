@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Input-Wrapper input{
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5) ;
+  outline: none;
+}
+
+.Input-Wrapper button {
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  border: 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5) ;
+}
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Ingredient {
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5) ;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Ingredient:hover {
+  width: 160px;
+  height: 210px;
+}
+
+.Ingredient span {
+  font-size: 14px;
+}
+
+.Ingredient img {
+  margin: 10px;
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.Ingredient p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.Step {
+  overflow-y: hidden;
+  position: relative;
+  top: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.Ingredient:hover .Step {
+  top: 0%;
+  visibility: visible;
+  opacity: 1;
+  overflow-y: scroll;
+}
